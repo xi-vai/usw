@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           classroom monstrosity
 @namespace      github.com/darxival
-@version        1.0.1
+@version        1.0.2
 @description    making gc just a bit less annoying (imo) while not changing the colors provided
 @author         darxival
 ==/UserStyle== */
 
 /*
-I would like to note that i'm building this as something to not interact with colors so that people who know how to do colors can have their themes interact with this with no mods.
+I would like to note that i'm building this as something to not interact with colors as much as possible so that people who know how to do colors can have their themes interact with this with no mods.
 I personally have been using https://userstyles.world/style/12025 through this, so i know this doesn't change colors.
 also, note that I'm not a professional even though i have a tech certification, this code is not perfect (it does not include teacher-only elements).
 */
@@ -36,7 +36,7 @@ also, note that I'm not a professional even though i have a tech certification, 
         display: none;
     }
     .uTwgne[aria-label="Archived classes"] {
-        display: ;
+        display: none;
     }
     .uTwgne[aria-label="Settings"] {
         display: ;
@@ -50,10 +50,22 @@ also, note that I'm not a professional even though i have a tech certification, 
             padding-top: 0;
         }
     }
+    .tCcYY {
+        width: 4.5rem;
+        height: 3rem;
+        transition: 0.4s;
+        background-color: rgba(0,0,0,0);
+    }
+    .tCcYY:hover {
+        width: 15rem;
+        height: 18rem;
+    }
     .rknsod {
         width: 4.5rem;
         height: 3rem;
         transition: 0.4s;
+        background-color: var(--gm3-sys-color-surface-container-low, #f8fafd);
+        scrollbar-width: none;
         border-bottom-right-radius: 1.75rem;
     }
     .rknsod:hover {
@@ -61,13 +73,7 @@ also, note that I'm not a professional even though i have a tech certification, 
         height: 18rem;
         border-bottom-right-radius: 3rem;
     }
-    .tCcYY {
-        width: 4.5rem;
-        transition: 0.4s;
-    }
-    .tCcYY:hover {
-        width: 15rem;
-    }
+
     .gdOsje {
         display: none;
     }
@@ -89,7 +95,7 @@ also, note that I'm not a professional even though i have a tech certification, 
         height: 9rem; /*0rem removes banner, 9rem is good small, 15rem is gc default, 21 is good large, can really be anything though*/
     }
     .PFLqgc {
-        background-image: url("https://cdn.discordapp.com/attachments/721519016824275077/1384939992224239799/temp.png?ex=68544161&is=6852efe1&hm=2fc9914efb5ad87ede745a53048a31d571f93f253c3a67550a3f3f81a8b9c546&") !important/*it is VERY important that this is important*/;
+        background-image: url("https://media.discordapp.net/attachments/721519016824275077/1384939992224239799/temp.png?ex=68cae861&is=68c996e1&hm=216e6c834ee9b1a366f0f81af8705274053a4025e8160c1ecd94dfc872b80151&=&format=webp&quality=lossless&width=970&height=544") !important/*it is VERY important that this is important*/;
     }
     .DXLeqd/*this is the "upcoming assignments" pane to the left*/{
         display: none;
@@ -116,9 +122,9 @@ also, note that I'm not a professional even though i have a tech certification, 
     /*rightpanecw&p end*/
     /*rightpaneclasses start*/
     .gHz6xd {
-        width: 18.25vw;
-        margin-bottom: 1vw;
-        margin-left: 1vw;
+        width: 16rem;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
         margin-right: 0px;
     }/*weird thing happens when hovering over, don't feel like fixing it and it's fun*/
     .JwPp0e {
