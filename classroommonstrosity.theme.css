@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           classroom monstrosity
 @namespace      github.com/darxival
-@version        1.0.2
+@version        1.0.3
 @description    making gc just a bit less annoying (imo) while not changing the colors provided
 @author         darxival
 ==/UserStyle== */
@@ -9,10 +9,13 @@
 /*
 I would like to note that i'm building this as something to not interact with colors as much as possible so that people who know how to do colors can have their themes interact with this with no mods.
 I personally have been using https://userstyles.world/style/12025 through this, so i know this doesn't change colors.
-also, note that I'm not a professional even though i have a tech certification, this code is not perfect (it does not include teacher-only elements).
+I plan to figure out how @var works before i up the version number to 1.1.0
+also, note that I'm not a professional, this code is not perfect (it does not include teacher-only elements).
 */
 @-moz-document domain("classroom.google.com") {
+    
     /*leftpane start*/
+
     .aBPWdf {
         flex: 0 0 0;
     }
@@ -21,11 +24,10 @@ also, note that I'm not a professional even though i have a tech certification, 
             width: calc(100% - 3rem);
         }
     }
-        /*for the following, set "none" to hide, set blank to show*/
+    /*blank to show, none to hide*/
     .uTwgne[aria-label="Home"] {
         display: none;
     }
-    
     .uTwgne[aria-label="Calendar"] {
         display: none;
     }
@@ -44,12 +46,6 @@ also, note that I'm not a professional even though i have a tech certification, 
     .s28puc {
         margin: 0 0;
     }
-    .ZtINmf {
-        .rknsod {
-            padding: 0.625rem;
-            padding-top: 0;
-        }
-    }
     .tCcYY {
         width: 4.5rem;
         height: 3rem;
@@ -67,14 +63,15 @@ also, note that I'm not a professional even though i have a tech certification, 
         background-color: var(--gm3-sys-color-surface-container-low, #f8fafd);
         scrollbar-width: none;
         border-bottom-right-radius: 1.75rem;
+        padding: 0.5rem;
+        padding-top: 0;
     }
     .rknsod:hover {
         width: 15rem;
         height: 18rem;
         border-bottom-right-radius: 3rem;
     }
-
-    .gdOsje {
+    .ZYus1c {
         display: none;
     }
     /*leftpane end*/
@@ -94,8 +91,8 @@ also, note that I'm not a professional even though i have a tech certification, 
     .qyN25 {
         height: 9rem; /*0rem removes banner, 9rem is good small, 15rem is gc default, 21 is good large, can really be anything though*/
     }
-    .PFLqgc {
-        background-image: url("https://media.discordapp.net/attachments/721519016824275077/1384939992224239799/temp.png?ex=68cae861&is=68c996e1&hm=216e6c834ee9b1a366f0f81af8705274053a4025e8160c1ecd94dfc872b80151&=&format=webp&quality=lossless&width=970&height=544") !important/*it is VERY important that this is important*/;
+    .PFLqgc/*it is important you CHANGE THE LINK TO YOUR OWN IMAGE*/ {
+        background-image: url("https://media.discordapp.net/attachments/721519016824275077/1384939992224239799/temp.png?ex=68cc39e1&is=68cae861&hm=94308bf12fd3ad3d5a2e1070028cd31a43ede153efada54980e2bb879f8d1b65&=&width=550&height=309") !important/*it is VERY important that this is important*/;
     }
     .DXLeqd/*this is the "upcoming assignments" pane to the left*/{
         display: none;
@@ -113,22 +110,23 @@ also, note that I'm not a professional even though i have a tech certification, 
         display: none;
     }
     .EE538 {
-        max-width: 70vw
+        max-width: calc(100vw - 29rem);
+        padding-left: 3rem;
     }
     .BiaLW {
-        max-width: 20vw;
-        width: 20vw;
+        max-width: 20rem;
+        width: 20rem;
     }
     /*rightpanecw&p end*/
     /*rightpaneclasses start*/
     .gHz6xd {
-        width: 16rem;
-        margin-bottom: 1rem;
+        width: 18rem;
+        margin-bottom: .5rem;
         margin-left: 3rem;
         margin-right: 0px;
     }/*weird thing happens when hovering over, don't feel like fixing it and it's fun*/
     .JwPp0e {
-        padding-left: 1vw;
+        padding-left: 1rem;
         padding-top: 4rem;
     }
     /*rightpaneclasses end*/
@@ -160,6 +158,6 @@ also, note that I'm not a professional even though i have a tech certification, 
     }
     /*uppertopbar end*/
     .N6nSod/*help button*/ {
-        background-color: rgba(0, 0, 0, 0);
+        display: none;
     }
 }
