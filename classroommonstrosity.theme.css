@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name           classroom monstrosity
-@namespace      github.com/darxival
-@version        1.0.3
+@namespace      github.com/xi-vai
+@version        1.0.4
 @description    making gc just a bit less annoying (imo) while not changing the colors provided
-@author         darxival
+@author         xivai
 ==/UserStyle== */
 
 /*
@@ -89,10 +89,10 @@ also, note that I'm not a professional, this code is not perfect (it does not in
         --gm3-banner-content-max-width: 100%;
     }
     .qyN25 {
-        height: 9rem; /*0rem removes banner, 9rem is good small, 15rem is gc default, 21 is good large, can really be anything though*/
+        height: 5rem; /*0rem removes banner, 5rem is good for name, 9rem is good small, 15rem is gc default, 21 is good large, can really be anything though*/
     }
-    .PFLqgc/*it is important you CHANGE THE LINK TO YOUR OWN IMAGE*/ {
-        background-image: url("https://media.discordapp.net/attachments/721519016824275077/1384939992224239799/temp.png?ex=68cc39e1&is=68cae861&hm=94308bf12fd3ad3d5a2e1070028cd31a43ede153efada54980e2bb879f8d1b65&=&width=550&height=309") !important/*it is VERY important that this is important*/;
+    .PFLqgc { /*the image link i put in here is from my bandcamp banner, please replace it if you want a bigger banner.*/
+        background-image: url("https://f4.bcbits.com/img/0044724638_102.avif") !important/*removing the important flag restores google's banners*/;
     }
     .DXLeqd/*this is the "upcoming assignments" pane to the left*/{
         display: none;
@@ -116,6 +116,9 @@ also, note that I'm not a professional, this code is not perfect (it does not in
     .BiaLW {
         max-width: 20rem;
         width: 20rem;
+    }
+    .d3aYgd .luto0c {
+        width: calc(calc(4rem + 15vw) - .375rem);
     }
     /*rightpanecw&p end*/
     /*rightpaneclasses start*/
@@ -147,9 +150,9 @@ also, note that I'm not a professional, this code is not perfect (it does not in
             margin: 0 0 0;
         }
     }
-    .y183Ub {
+    .dR850e {
         display: none;
-    }
+    } /*this removes the "classroom" word*/
     .NMm5M[width="18"]/*removing this small arrow was so stupid*/ {
         display: none
     }
